@@ -1,0 +1,19 @@
+SUM OF RANGES-LOOPS:(HACKERRANK)
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,b,sum=0;
+    scanf("%d%d",&a,&b);
+    for(int i=a;i<=b;i++){
+        sum=sum+a;
+        a++;
+    }
+    printf("%d",sum);
+    return 0;
+}
