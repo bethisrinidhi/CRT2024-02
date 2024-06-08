@@ -1,0 +1,28 @@
+TORRES COUNTY VISA CENTER (HACKERRANK)-LOOPS:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,d,s=0,d1;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        n=n/10;
+        s=s*10+d;
+    }
+    while(s>0)
+    {
+        d1=s%10;
+        s=s/10;
+        if(d1%2==0)
+            printf("%d",d1+1);
+        else
+            printf("%d",d1-1);
+    }
+    
+    return 0;
+}
