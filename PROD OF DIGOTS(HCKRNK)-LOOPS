@@ -1,0 +1,23 @@
+PRODUCT OF DIGITS(HACKERRANK):LOOPS
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int n,rem,p=1;
+    scanf("%d",&n);
+    while(n>0){
+        rem=n%10;
+        n=n/10;
+        if(rem!=0){
+        p=p*rem;
+        }
+        else{
+            p=p*rem+1;
+        }
+    }
+     printf("%d",p);
+    return 0;
+}
