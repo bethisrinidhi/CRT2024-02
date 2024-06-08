@@ -1,0 +1,27 @@
+ARMSTRONG NUM(HACKERRANK):LOPPS
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+    int n,r,rem,temp,s=0;
+    scanf("%d",&n);
+    r=log10(n)+1;
+    temp=n;
+    while(n>=1){
+        rem=n%10;
+        n=n/10;
+        s=s+pow(rem,r);
+        
+    }
+    if(s==temp){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+
+    return 0;
+}
