@@ -1,0 +1,15 @@
+STATIC VARIABLES-(STORAGE CLASSES):
+
+#include <stdio.h>
+void increment(){
+   static int a=1;
+    printf("%d ",a);
+    a++;
+}
+int main() {
+    increment();
+    increment();
+    return 0;
+}
+OUTPUT:
+1 2
