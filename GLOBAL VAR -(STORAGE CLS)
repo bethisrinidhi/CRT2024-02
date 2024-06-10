@@ -1,0 +1,13 @@
+GLOBAL VARIABLE EX:
+
+#include <stdio.h>
+int a=10;
+void increment(){
+    printf("%d ",a);
+    a++;
+}
+int main() {
+    increment();
+    increment();
+    return 0;
+}
