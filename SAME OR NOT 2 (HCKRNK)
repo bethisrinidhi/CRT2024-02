@@ -1,0 +1,35 @@
+SAME OR NOT 2 (HACKERRANK):
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m,i;
+    scanf("%d%d",&n,&m);
+    int a[n],a1[m];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<m;i++){
+        scanf("%d",&a1[i]);
+    }
+      if(n!=m){
+          printf("Not Same");
+      }
+    else{
+        for(i=0;i<n;i++){
+            if(a[i]!=a1[i]){
+                printf("Not Same");
+                break;
+            }
+        }
+        if(i==n){
+            printf("Same");
+        }
+    }
+    
+    return 0;
+}
